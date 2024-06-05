@@ -1,81 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@700&display=swap");
 
-* {
-    box-sizing: border-box;
-    font-family: 'Montserrat', 'Fraunces';
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+
+  
+  --ff-body: "Montserrat", sans-serif;
+    --ff-heading: "Fraunces", serif;
 }
 
-section {
-    padding: 0px 2rem;
+* {
+  box-sizing: border-box;
+  font-family: var(--ff-body);
 }
 
 body {
-    margin: 0;
-    padding: 1rem;
-    background-color: hsl(30, 38%, 92%);
-    max-width: 375px;
+  margin: 0;
+  /* padding: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--Cream);
+  max-width: 375px;
+  padding: 1rem;
+  min-height: 100vh;
 }
 
+
 main {
-    /* padding: 2rem; */
-    background-color: hsl(0, 0%, 100%);
-    /* border-top-left-radius: 20px;  */
-    /* border-top-right-radius: 20px; */
-    border-radius: 20px;
-    padding-bottom: 1.5rem;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  border-radius: 1rem;
+  /* padding-bottom: 1.5rem; */
+  background-color: var(--White);
+}
+
+section {
+  padding: 0rem 1.5rem;
 }
 
 img {
-    border-top-left-radius: 20px; 
-    border-top-right-radius: 20px;
-    max-width: 100%;
-    padding-bottom: 20px;
-    }
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  max-width: 100%;
+  display: block;
+  padding-bottom: 1rem;
+}
 
 .perfume-span {
-    color: hsl(228, 12%, 48%);
-    font-size: 12px;
-    letter-spacing: .3rem;
+  color: hsl(228, 12%, 48%);
+  font-size: .8rem;
+  letter-spacing: 0.3rem;
 }
 
 h1 {
-font-family: 'Fraunces';
-font-size: 2rem;
+  font-family: "Fraunces";
+  font-size: 2rem;
+  /* padding: .6rem 0; */
+  line-height: 2rem;
 }
 
 p {
-    color: hsl(228, 12%, 48%);
-    font-size: 14px;
-    line-height: 1.4rem;
+  color: hsl(228, 12%, 48%);
+  font-size: 0.875rem;
+  line-height: 1.5rem;
 }
 
+
+
 .discount {
-    font-size: 2rem;
-    color: hsl(158, 36%, 37%);
-    font-weight: 700;
-    font-family: 'Fraunces';
+  font-size: 2rem;
+  color: var(--Dark-cyan);
+  font-weight: 700;
+  font-family: "Fraunces";
 }
 
 .original-price {
-    text-decoration: line-through;
-    font-size: 12px;
-    color: hsl(228, 12%, 48%);
-    margin-bottom: 20px;
+  text-decoration: line-through;
+  font-size: 0.8rem;
+  color: var(--Dark-grayish-blue);
+  padding: 1rem;
+
 }
 
 button {
-    background-color: hsl(158, 36%, 37%);
-    color: hsl(30, 38%, 92%);
-    font-weight: 700;
-    padding: 6% 0%;
-    width: 100%;
-    border: none;
-    border-radius: 7px;
+  background-color: var(--Dark-cyan);
+  color: var(--Cream);
+  font-weight: 700;
+  /* padding: 1rem 1rem; */
+  width: 100%;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px; /* Adjust the gap between the image and the text as needed */
+      /* padding: 10px 20px; */
+}
+
+button img {
+  /* align-items: center; */
+  padding-top: .75rem;
+  /* display: inline; */
+  /* justify-content: center;  */
+}
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
 }
 
 footer {
-      .attribution { font-size: 11px; text-align: center; }
-      .attribution a { color: hsl(228, 45%, 44%); }
-      padding-top: 1.5rem;
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+  padding-top: 1.5rem;
 }
